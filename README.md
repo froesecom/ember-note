@@ -1,7 +1,6 @@
 # Ember-note
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is represents learnings from *Deliver Audacious Apps with Ember 2* by Matthew White.
 
 ## Prerequisites
 
