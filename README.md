@@ -3,7 +3,7 @@
 This is represents learnings from *Deliver Audacious Apps with Ember 2* by Matthew White.
 
 #### Upto
-Page 23
+Page 28
 
 ## Prerequisites
 
