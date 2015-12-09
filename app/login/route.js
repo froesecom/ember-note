@@ -12,7 +12,8 @@ export default Ember.Route.extend({
           // the makes the if/unless blocks in application.hbs 'work'
           this.controllerFor('application').set('user', user);
           // redirect to notebooks route
-          this.transitionTo('notebooks');
+          // PROVIDE USER ID AS PARAMS
+          this.transitionTo('notebooks', user.get('id'));
         }
         else {
           console.log('unexpected query result');
