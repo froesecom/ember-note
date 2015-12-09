@@ -4,7 +4,13 @@
       Welcome to EmberNote
     </div>
     <div class="col-md-10">
-      {{#link-to 'register'}}register{{/link-to}}
+      {{#if user}}
+        Hello, {{user.name}}
+      {{/if}}
+      {{#unless user}}
+        {{#link-to 'register'}}register{{/link-to}}
+        {{#link-to 'login'}}login{{/link-to}}
+      {{/unless}}
     </div>
   </div>
   <div class="row">
