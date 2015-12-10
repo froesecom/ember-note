@@ -3,7 +3,7 @@
 This is represents learnings from *Deliver Audacious Apps with Ember 2* by Matthew White.
 
 #### Upto
-Page 44
+Page 59, "Binding Actions to Routes"
 
 ## Prerequisites
 

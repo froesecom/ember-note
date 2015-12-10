@@ -1,12 +1,13 @@
 <div>
   <div class="col-md-3">
     <div>Notebooks</div>
-    title: {{input value=title}}
+    title: {{input type="text" value=title}}
     <button {{action 'addNotebook'}}>Add</button>
   </div>
   <div>
     <ul>
       {{#each model as |notebook|}}
+        {{!-- link to nest route 'notebookes.notes' --}}
         {{#link-to 'notebooks.notes' notebook.id}}
           <li>{{notebook.title}}</li>
         {{/link-to}}
