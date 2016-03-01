@@ -1,1 +1,5 @@
-{{edit-note note=model close="close"}}
+{{#edit-note note=model close="close"}}
+  {{!-- This will be rendered in the 'yield' of the edit-note template --}}
+  Notebook: {{model.notebook.title}}
+{{/edit-note}}
+
