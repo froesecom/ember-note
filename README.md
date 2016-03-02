@@ -3,7 +3,7 @@
 This is represents learnings from *Deliver Audacious Apps with Ember 2* by Matthew White.
 
 #### Upto
-Page  71, 'Sending Actions'
+Page  88, "Reading nonstandard APIs"
 
 ## Prerequisites
 
