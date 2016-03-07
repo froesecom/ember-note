@@ -1,7 +1,7 @@
 import Ember from 'ember';
-import isValidLength from 'ember-note/utils/is-valid-length';
+import ValidationFunctions from 'ember-note/mixins/validation-functions';
 
-export default Ember.Route.extend({
+export default Ember.Route.extend(ValidationFunctions, {
   model: function(params) {
   return this.store.query('note', {notebook:params.notebook_id});
   },
@@ -9,7 +9,7 @@ export default Ember.Route.extend({
     addNote: function() {
       var title = this.controller.get('title');
      
-      if(!isValidLength(title,0,140)) {
+      if(!this.isValidLength(title,0,140)) {
         alert('Title must be between 0 and 140 characters');
       } else {
         this.store.findRecord('notebook',
